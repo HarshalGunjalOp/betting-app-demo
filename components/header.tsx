@@ -3,11 +3,13 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import SportsDropdown from "./sports-dropdown"
-import { redirect } from "next/navigation"
+import SportsDropdown from "./sport-dropdown"
+import { Wallet } from "lucide-react"
 
 export default function Header() {
   const [sportsMenuOpen, setSportsMenuOpen] = useState(false)
+  // Mock balance - in a real app, this would come from your authentication/user context
+  const balance = "$250.00"
 
   return (
     <header className="w-full">
@@ -27,7 +29,8 @@ export default function Header() {
                 </div>
               </div>
             </Link>
-
+          </div>
+          <div>
             <nav className="hidden md:flex items-center space-x-6 relative">
               <button
                 className="hover:text-[#ff5722] text-sm font-medium flex items-center"
@@ -56,24 +59,24 @@ export default function Header() {
               <Link href="/betting" className="hover:text-[#ff5722] text-sm font-medium">
                 Betting
               </Link>
-              <Link href="/promos" className="hover:text-[#ff5722] text-sm font-medium">
-                Promos
-              </Link>
               <Link href="/contests" className="hover:text-[#ff5722] text-sm font-medium">
                 Contests
-              </Link>
-              <Link href="/forum" className="hover:text-[#ff5722] text-sm font-medium">
-                Forum
-              </Link>
-              <Link href="/march-madness" className="hover:text-[#ff5722] text-sm font-medium">
-                March Madness
               </Link>
 
               <SportsDropdown isOpen={sportsMenuOpen} onClose={() => setSportsMenuOpen(false)} />
             </nav>
           </div>
 
-          <Button className="bg-[#ff5722] hover:bg-[#e64a19] text-white" onClick={()=>redirect("/login")}>Log in</Button>
+          <div className="flex items-center space-x-4">
+            <Link href="/wallet" className="flex items-center bg-[#263545] hover:bg-[#2e3e50] px-3 py-2 rounded-md">
+              <Wallet className="h-4 w-4 mr-2 text-[#ff5722]" />
+              <span className="text-sm font-medium">{balance}</span>
+            </Link>
+            
+            <Button className="bg-[#ff5722] hover:bg-[#e64a19] text-white">
+              <Link href="/login"> Log in </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </header>

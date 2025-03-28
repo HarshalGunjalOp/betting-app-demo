@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function PopularContent() {
+export default function PopularContent({sport}: { sport: string }) {
   const articles = [
     {
       id: 1,

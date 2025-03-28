@@ -24,7 +24,7 @@ export default function Login() {
             <Input id="password" type="password" required />
           </div>
           <div className="flex justify-between">
-            <span className="text-xs color-blue-100"><a href="">Don't have an account?</a></span>
+            <span className="text-xs color-blue-100"><a href="/register">Don't have an account?</a></span>
             <span className="text-xs color-black-100">Forgot Password</span>
           </div>
           <Button type="submit" className="w-full">

@@ -1,12 +1,12 @@
 import Link from "next/link"
 
-export default function SportSubnav() {
+export default function SportSubnav({sport}: { sport: string }) {
   return (
     <div className="bg-white border-b mb-6">
       <div className="container mx-auto px-4">
         <div className="flex overflow-x-auto space-x-4 py-2">
-          <NavLink href="/nfl" active>
-            NFL
+          <NavLink href={"/"+sport} active>
+            {sport}
           </NavLink>
           <NavLink href="/nfl/scores">Scores & Matchups</NavLink>
           <NavLink href="/nfl/free-picks">Free Picks</NavLink>

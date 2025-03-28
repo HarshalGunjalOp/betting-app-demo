@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 
-export default function TopSportSportsbooks() {
+export default function TopSportSportsbooks({sport}: { sport: string }) {
   const sportsbooks = [
     {
       id: 1,
@@ -42,7 +42,7 @@ export default function TopSportSportsbooks() {
   return (
     <div className="bg-[#1c2a38] rounded-lg shadow overflow-hidden">
       <div className="p-4 border-b border-gray-700">
-        <h2 className="text-xl font-bold text-white">Top NFL Sportsbooks</h2>
+        <h2 className="text-xl font-bold text-white">Top {sport} Sportsbooks</h2>
       </div>
 
       <div className="divide-y divide-gray-700">

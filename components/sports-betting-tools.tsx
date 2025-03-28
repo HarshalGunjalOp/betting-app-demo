@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function SportBettingTools() {
+export default function SportBettingTools({sport}: { sport: string }) {
   const tools = [
     {
       id: "odds",
@@ -69,7 +69,7 @@ export default function SportBettingTools() {
   return (
     <div className="bg-white rounded-lg shadow overflow-hidden">
       <div className="p-4 border-b">
-        <h2 className="text-xl font-bold">NFL Betting Tools</h2>
+        <h2 className="text-xl font-bold">{sport} Betting Tools</h2>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4">
