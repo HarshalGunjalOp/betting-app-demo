@@ -48,10 +48,10 @@ export default function NCAABOdds() {
 
   const bookmakers = [
     { id: "bet365", name: "bet365", logo: "/bet365svg" },
-    { id: "pinnacle", name: "PINNACLE", logo: "/placeholder.svg?height=30&width=80&text=PINNACLE" },
-    { id: "betvictor", name: "BETVICTOR", logo: "/placeholder.svg?height=30&width=80&text=BETVICTOR" },
+    { id: "pinnacle", name: "PINNACLE", logo: "/pinnacle.svg" },
+    { id: "betvictor", name: "BETVICTOR", logo: "/betvictor.svg" },
     { id: "williamhill", name: "William Hill", logo: "williamhill.svg" },
-    { id: "888", name: "888", logo: "/placeholder.svg?height=30&width=80&text=888" },
+    { id: "888", name: "888", logo: "/888sport.svg" },
     { id: "betway", name: "betway", logo: "/betway.svg" },
   ]
 

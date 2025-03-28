@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import SportsDropdown from "./sports-dropdown"
+import { redirect } from "next/navigation"
 
 export default function Header() {
   const [sportsMenuOpen, setSportsMenuOpen] = useState(false)
@@ -72,7 +73,7 @@ export default function Header() {
             </nav>
           </div>
 
-          <Button className="bg-[#ff5722] hover:bg-[#e64a19] text-white">Log in</Button>
+          <Button className="bg-[#ff5722] hover:bg-[#e64a19] text-white" onClick={()=>redirect("/login")}>Log in</Button>
         </div>
       </div>
     </header>

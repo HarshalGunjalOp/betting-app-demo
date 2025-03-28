@@ -6,7 +6,7 @@ import Header from "@/components/header"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Covers - Sports Betting Odds & Lines",
+  title: "BET DEMO - Sports Betting App",
   description: "Get the latest sports betting odds and lines for all major sports.",
 }
 

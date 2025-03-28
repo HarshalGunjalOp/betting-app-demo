@@ -33,7 +33,7 @@ export default function TopNFLSportsbooks() {
     {
       id: 5,
       name: "888",
-      logo: "/placeholder.svg?height=40&width=100&text=888",
+      logo: "/888sport.svg",
       bonus: "100% Bonus up to €100",
       bonusInfo: "i",
     },

@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function SportsDropdown({ isOpen, onClose }) {
   return (
-    <div className={`absolute top-full left-0 w-full bg-white shadow-lg z-50 ${isOpen ? "block" : "hidden"}`}>
+    <div className={`absolute top-full left-0 w-full bg-white text-black shadow-lg z-50 ${isOpen ? "block" : "hidden"}`}>
       <div className="container mx-auto grid grid-cols-3 gap-4 p-4">
         <div className="col-span-1 border-r">
           <SportsList onClose={onClose} />

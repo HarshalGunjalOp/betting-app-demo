@@ -95,7 +95,7 @@ export default function FeaturedMatchups() {
       time: "9:30pm ET",
       team1: {
         name: "Michigan",
-        abbr: "MICH",
+        abbr: "MISS",
         percentage: "63%",
         spread: "+8",
         spreadOdds: "-110",
@@ -103,7 +103,7 @@ export default function FeaturedMatchups() {
       },
       team2: {
         name: "Auburn",
-        abbr: "AUB",
+        abbr: "MSU",
         percentage: "37%",
         spread: "-8.5",
         spreadOdds: "-115",
@@ -127,9 +127,9 @@ export default function FeaturedMatchups() {
   )
 }
 
-function MatchupCard({ matchup }) {
+function MatchupCard({ matchup }:any) {
   return (
-    <div className="bg-white rounded-lg shadow overflow-hidden">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="bg-gray-100 p-2 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <span className="bg-yellow-500 text-xs font-bold px-2 py-1 rounded text-white">{matchup.league}</span>
@@ -143,7 +143,13 @@ function MatchupCard({ matchup }) {
         <div className="flex justify-between items-center mb-3">
           <div className="flex items-center">
             <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center mr-2">
-              <span className="text-xs">{matchup.team1.abbr.charAt(0)}</span>
+            <img
+              src={`/${matchup.team1.abbr.toLowerCase()}.svg`}
+              alt={matchup.team1.bookmaker}
+              className="h-4"
+              width={60}
+              height={20}
+            />
             </div>
             <span className="font-bold">{matchup.team1.abbr}</span>
           </div>
@@ -152,20 +158,26 @@ function MatchupCard({ matchup }) {
             <span className="bg-gray-200 text-xs px-2 py-1 rounded">
               {matchup.team1.spread} {matchup.team1.spreadOdds}
             </span>
-            <img
+            {/* <img
               src="/placeholder.svg?height=20&width=60"
               alt={matchup.team1.bookmaker}
               className="h-4"
               width={60}
               height={20}
-            />
+            /> */}
           </div>
         </div>
 
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center">
             <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center mr-2">
-              <span className="text-xs">{matchup.team2.abbr.charAt(0)}</span>
+            <img
+              src={`/${matchup.team2.abbr.toLowerCase()}.svg`}
+              alt={matchup.team2.bookmaker}
+              className="h-4"
+              width={60}
+              height={20}
+            />
             </div>
             <span className="font-bold">{matchup.team2.abbr}</span>
           </div>
@@ -174,26 +186,26 @@ function MatchupCard({ matchup }) {
             <span className="bg-gray-200 text-xs px-2 py-1 rounded">
               {matchup.team2.spread} {matchup.team2.spreadOdds}
             </span>
-            <img
+            {/* <img
               src="/placeholder.svg?height=20&width=60"
               alt={matchup.team2.bookmaker}
               className="h-4"
               width={60}
               height={20}
-            />
+            /> */}
           </div>
         </div>
 
-        <div className="bg-gray-100 p-2 rounded mb-3">
-          <div className="text-xs text-gray-500 mb-1">EXPERT PICK</div>
-          <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-2">
+        {/* <div className="bg-gray-100 p-2 rounded mb-3"> */}
+          {/* <div className="text-xs text-gray-500 mb-1">EXPERT PICK</div>
+          <div className="flex justify-between items-center"> */}
+            {/* <div className="flex items-center space-x-2">
               <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center">
                 <span className="text-xs">{matchup.team1.abbr.charAt(0)}</span>
-              </div>
-              <span className="text-sm font-medium">{matchup.expertPick.title}</span>
-            </div>
-            <div className="flex items-center space-x-1">
+              </div> */}
+              {/* <span className="text-sm font-medium">{matchup.expertPick.title}</span> */}
+            {/* </div> */}
+            {/* <div className="flex items-center space-x-1">
               <span className="bg-gray-200 text-xs px-2 py-1 rounded">{matchup.expertPick.odds}</span>
               <img
                 src="/placeholder.svg?height=20&width=60"
@@ -202,11 +214,11 @@ function MatchupCard({ matchup }) {
                 width={60}
                 height={20}
               />
-            </div>
-          </div>
-        </div>
+            </div> */}
+          {/* </div> */}
+        {/* </div> */}
 
-        <Button variant="outline" className="w-full text-sm">
+        <Button variant="outline" className="w-full text-sm outline-[#ff5722] hover:bg-[#ff5722] hover:text-white transition-all duration-150 ease-in">
           View Matchup
         </Button>
       </div>
