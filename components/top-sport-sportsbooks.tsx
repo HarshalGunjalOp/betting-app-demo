@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 
-export default function TopNFLSportsbooks() {
+export default function TopSportSportsbooks() {
   const sportsbooks = [
     {
       id: 1,

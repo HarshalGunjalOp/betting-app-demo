@@ -22,16 +22,17 @@ export default function SportsDropdown({ isOpen, onClose }) {
 
 function SportsList({ onClose }) {
   const sports = [
-    { id: "nfl", name: "NFL", icon: "🏈" },
-    { id: "ncaaf", name: "NCAAF", icon: "🏈" },
-    { id: "nba", name: "NBA", icon: "🏀" },
-    { id: "ncaab", name: "NCAAB", icon: "🏀" },
-    { id: "mlb", name: "MLB", icon: "⚾" },
-    { id: "nhl", name: "NHL", icon: "🏒" },
-    { id: "soccer", name: "Soccer", icon: "⚽" },
-    { id: "ufc", name: "UFC", icon: "🥊" },
-    { id: "wnba", name: "WNBA", icon: "🏀" },
-    { id: "cfl", name: "CFL", icon: "🏈" },
+    { id: "cricket", name: "Cricket", icon: "🏏" },
+    { id: "football", name: "Football", icon: "⚽" },
+    { id: "tennis", name: "Tennis", icon: "🎾" },
+    { id: "tabletennis", name: "Table Tennis", icon: "🏓" },
+    { id: "boxing", name: "Boxing", icon: "🥊" },
+    { id: "mma", name: "Mixed Martial Arts", icon: "🤼" },
+    { id: "horseracing", name: "Horse Racing", icon: "🏇" },
+    { id: "greyhoundracing", name: "Greyhound Racing", icon: "🐕" },
+    { id: "esoccer", name: "Esoccer", icon: "🎮⚽" },
+    { id: "basketball", name: "Basketball", icon: "🏀" },
+    { id: "badminton", name: "Badminton", icon: "🏸" },
     { id: "golf", name: "Golf", icon: "🏌️" },
   ]
 
@@ -62,17 +63,17 @@ function SportsList({ onClose }) {
 
 function SectionsList({ onClose }) {
   const sections = [
-    { id: "home", name: "NFL Home" },
-    { id: "scores", name: "Scores & Matchups" },
-    { id: "odds", name: "Odds" },
-    { id: "projections", name: "Prop Projections" },
-    { id: "super-bowl-odds", name: "Super Bowl Odds" },
-    { id: "futures", name: "Futures" },
-    { id: "free-picks", name: "Free Picks" },
-    { id: "news", name: "News & Analysis" },
-    { id: "contest", name: "NFL Contest" },
-    { id: "super-bowl", name: "Super Bowl" },
-    { id: "injuries", name: "Injuries" },
+    { id: "home", name: "Home" },
+    { id: "lottery", name: "Lottery" },
+    { id: "cricket", name: "Cricket" },
+    { id: "tennis", name: "Tennis" },
+    { id: "football", name: "Football" },
+    { id: "table-tennis", name: "Table Tennis" },
+    { id: "baccarat", name: "Baccarat" },
+    { id: "32-cards", name: "32 Cards" },
+    { id: "teenpatti", name: "Teenpatti" },
+    { id: "poker", name: "Poker" },
+    { id: "lucky-7", name: "Lucky 7" },
   ]
 
   return (
@@ -90,13 +91,16 @@ function SectionsList({ onClose }) {
 
 function FeaturesList({ onClose }) {
   const features = [
-    { id: "teams", name: "Teams" },
-    { id: "players", name: "Players" },
-    { id: "standings", name: "Standings" },
-    { id: "statistics", name: "Statistics" },
-    { id: "weather", name: "Weather" },
-    { id: "league-trends", name: "League Trends" },
-    { id: "print-sheets", name: "Print Sheets" },
+    { id: "racing-sports", name: "Racing Sports" },
+    { id: "horse-racing", name: "Horse Racing" },
+    { id: "greyhound-racing", name: "Greyhound Racing" },
+    { id: "others", name: "Others" },
+    { id: "our-casino", name: "Our Casino" },
+    { id: "our-virt", name: "Our Virt" },
+    { id: "live-casino", name: "Live Casino" },
+    { id: "slot-game", name: "Slot Game" },
+    { id: "fantasy-game", name: "Fantasy Game" },
+    { id: "all-sports", name: "All Sports" },
   ]
 
   return (

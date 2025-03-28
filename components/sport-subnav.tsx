@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function NFLSubnav() {
+export default function SportSubnav() {
   return (
     <div className="bg-white border-b mb-6">
       <div className="container mx-auto px-4">

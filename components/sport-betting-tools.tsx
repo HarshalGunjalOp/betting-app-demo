@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function NFLBettingTools() {
+export default function SportBettingTools() {
   const tools = [
     {
       id: "odds",

@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function NFLMustReads() {
+export default function SportMustReads() {
   const articles = [
     {
       id: 1,
