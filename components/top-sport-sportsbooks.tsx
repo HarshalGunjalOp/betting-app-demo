@@ -19,7 +19,7 @@ export default function TopSportSportsbooks({sport}: { sport: string }) {
     {
       id: 3,
       name: "PINNACLE",
-      logo: "/placeholder.svg?height=40&width=100&text=PINNACLE",
+      logo: "/pinnacle.svg",
       bonus: "Best Odds, High Limits",
       bonusInfo: "i",
     },
@@ -57,7 +57,7 @@ export default function TopSportSportsbooks({sport}: { sport: string }) {
                 </span>
               </div>
             </div>
-            <Button variant="outline" className="text-white border-white hover:bg-white/10 text-sm">
+            <Button variant="outline" className="text-black border-white hover:bg-white/10 text-sm hover:text-white">
               Review
             </Button>
           </div>

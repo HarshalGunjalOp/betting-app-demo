@@ -13,7 +13,6 @@ export default async function SportPage({
   const sport = String(slug[0]).toUpperCase() + String(slug).slice(1)
   return (
     <main className="min-h-screen bg-gray-100">
-      <SportSubnav sport={sport} />
 
       <div className="container mx-auto px-4 py-6">
         <div className="mb-8">
