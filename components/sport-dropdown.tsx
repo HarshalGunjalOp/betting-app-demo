@@ -132,13 +132,7 @@ function LeaguesList({ onClose }: { onClose: () => void }) {
     { id: "nhl", name: "NHL", category: "Hockey" },
     { id: "premier-league", name: "Premier League", category: "Soccer" },
     { id: "la-liga", name: "La Liga", category: "Soccer" },
-    { id: "bundesliga", name: "Bundesliga", category: "Soccer" },
-    { id: "serie-a", name: "Serie A", category: "Soccer" },
     { id: "champions-league", name: "Champions League", category: "Soccer" },
-    { id: "mls", name: "MLS", category: "Soccer" },
-    { id: "pga", name: "PGA Tour", category: "Golf" },
-    { id: "formula1", name: "Formula 1", category: "Racing" },
-    { id: "nascar", name: "NASCAR", category: "Racing" },
   ]
 
   // Group leagues by category
