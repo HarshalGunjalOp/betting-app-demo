@@ -206,29 +206,19 @@ function FeaturedList({ onClose }: { onClose: () => void }) {
 
   const features: FeatureItem[] = [
     { 
-      id: "live-betting", 
+      id: "betting", 
       name: "Live Betting", 
       icon: <Zap className="h-5 w-5 text-green-500" />,
       description: "Bet on games in progress"
     },
-    { 
-      id: "parlays", 
-      name: "Parlays & Teasers", 
-      icon: <BarChart className="h-5 w-5 text-blue-500" />,
-      description: "Combine multiple bets"
-    },
+   
     { 
       id: "picks", 
       name: "Expert Picks", 
       icon: <Star className="h-5 w-5 text-yellow-500" />,
       description: "See our analysts' recommendations"
     },
-    { 
-      id: "promos", 
-      name: "Promotions", 
-      icon: <Flame className="h-5 w-5 text-red-500" />,
-      description: "Latest bonus offers"
-    },
+    
   ];
 
   return (

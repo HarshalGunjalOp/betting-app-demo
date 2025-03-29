@@ -299,7 +299,7 @@ export default function LeaguePage() {
                           <div className="flex items-center gap-2">
                             <div className="relative h-8 w-8">
                               <Image
-                                src={match.homeTeam.logo || '/placeholder-team.png'}
+                                src={match.homeTeam.logo || '/team.png'}
                                 alt={match.homeTeam.name}
                                 fill
                                 className="object-contain"
@@ -319,7 +319,7 @@ export default function LeaguePage() {
                             <span className="font-medium">{match.awayTeam.name}</span>
                             <div className="relative h-8 w-8">
                               <Image
-                                src={match.awayTeam.logo || '/placeholder-team.png'}
+                                src={match.awayTeam.logo || '/team.png'}
                                 alt={match.awayTeam.name}
                                 fill
                                 className="object-contain"
@@ -362,7 +362,7 @@ export default function LeaguePage() {
                               <div className="flex items-center gap-2">
                                 <div className="relative h-6 w-6">
                                   <Image
-                                    src={team.logo || '/placeholder-team.png'}
+                                    src={team.logo || '/team.png'}
                                     alt={team.name}
                                     fill
                                     className="object-contain"
@@ -398,7 +398,7 @@ export default function LeaguePage() {
                       <CardHeader className="flex flex-row items-center gap-3">
                         <div className="relative h-12 w-12">
                           <Image
-                            src={team.logo || '/placeholder-team.png'}
+                            src={team.logo || '/team.png'}
                             alt={team.name}
                             fill
                             className="object-contain"
