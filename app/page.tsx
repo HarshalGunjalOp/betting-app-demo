@@ -135,9 +135,11 @@ export default function HomePage() {
             <div className="hidden lg:block">
               <div className="relative h-64">
                 {/* Placeholder for hero image */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-700/70 to-[#ff5722]/70 flex items-center justify-center">
-                  <Trophy className="h-24 w-24 text-white opacity-75" />
-                </div>
+               <div className="flex items-center justify-center overflow-hidden rounded-md h-[16rem] w-[35rem]">
+  <img src="/banner.png" alt="banner" className="w-full h-full object-cover"></img>
+</div>
+
+
               </div>
             </div>
           </div>
